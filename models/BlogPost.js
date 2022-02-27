@@ -29,7 +29,7 @@ BlogPost.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'painting',
+    modelName: 'post',
   }
 )
 module.exports = Painting;
