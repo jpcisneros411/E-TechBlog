@@ -32,4 +32,4 @@ BlogPost.init(
     modelName: 'post',
   }
 )
-module.exports = Painting;
+module.exports = BlogPost;

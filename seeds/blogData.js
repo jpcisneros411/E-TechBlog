@@ -1,3 +1,5 @@
+const { BlogPost } = require('../models');
+
 const blogData = [
     {
     title: "Working on a Truck.",
