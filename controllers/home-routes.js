@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Gallery, Painting, BlogPost } = require('../models');
+const { BlogPost } = require('../models');
 // Import the custom middleware
 const withAuth = require('../utils/auth');
 
