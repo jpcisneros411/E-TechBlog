@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
     const dbBlogData = await BlogPost.findAll({
       include: [
         {
-          model: post,
+          model: BlogPost,
           attributes: ['title', 'author','contents'],
         },
       ],
