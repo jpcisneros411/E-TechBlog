@@ -6,6 +6,10 @@ Gallery.hasMany(Painting, {
   foreignKey: 'gallery_id',
 });
 
+//Blog.hasMany(Posts, {
+//foreignKey: 'posts_id',
+//})
+
 Painting.belongsTo(Gallery, {
   foreignKey: 'gallery_id',
 });
