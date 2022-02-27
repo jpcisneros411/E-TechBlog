@@ -15,10 +15,15 @@ BlogPost.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    artist: {
+    author: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    content: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    }
+
   },
   {
     sequelize,

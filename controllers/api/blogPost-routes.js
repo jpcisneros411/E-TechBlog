@@ -1,17 +1,16 @@
 const router = require('express').Router();
-const Dish = require('../../models/Dish');
+const BlogPost = require('../../models/BlogPost');
 
-// route to create/add a dish using async/await
+// route to create/add a Blog Post using async/await
 router.post('/', async (req, res) => {
   try { 
-    const dishData = await Dish.create({
-    dish_name: req.body.dish_name,
-    description: req.body.description,
-    guest_name: req.body.guest_name,
-    has_nuts: req.body.has_nuts,
+    const blogData = await BlogPost.create({
+    title: req.body.title,
+    author: req.body.description,
+    content: req.body.content
   });
-  // if the dish is successfully created, the new response will be returned as json
-  res.status(200).json(dishData)
+  // if the Blog Post is successfully created, the new response will be returned as json
+  res.status(200).json(blogData)
 } catch (err) {
   res.status(400).json(err);
 }
