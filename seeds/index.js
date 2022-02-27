@@ -1,6 +1,4 @@
 const sequelize = require('../config/connection');
-const seedGallery = require('./galleryData');
-const seedPaintings = require('./paintingData');
 const seedBlogPost = require('./blogData')
 
 const seedAll = async () => {
