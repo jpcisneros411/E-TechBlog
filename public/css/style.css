@@ -136,6 +136,23 @@ img {
   font-weight: bold;
 }
 
+.add-dish-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 35%;
+  margin: 5px auto;
+  border: 3px solid var(--primary);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: medium;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 5px;
+  text-align: center;
+  background-color: var(--tertiary);
+}
+
 .gallery-name {
   text-transform: uppercase;
   letter-spacing: 3px;
