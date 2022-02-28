@@ -1,5 +1,7 @@
 # E-Tech Blog
 
+![image](https://user-images.githubusercontent.com/88108211/156039806-a7a76717-e48f-4253-ad8f-ccb6d28dd27b.png)
+
 
   ## Table of Contents
 
