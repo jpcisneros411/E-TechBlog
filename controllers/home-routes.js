@@ -37,7 +37,7 @@ router.post('/', async (req, res) => {
     const dbBlogData = await BlogPost.create({
       title: req.body.title,
       author: req.body.author,
-      content: req.body.guest_name
+      content: req.body.content
     });
     res.status(200).json(dbBlogData);
   } catch (err) {
