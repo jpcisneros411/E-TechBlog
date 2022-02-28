@@ -56,7 +56,7 @@ router.get('/login', (req, res) => {
 
 router.get('/dashboard', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/')
+    res.redirect('/dashboard')
     return
   };
 });
