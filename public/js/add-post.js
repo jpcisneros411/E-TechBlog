@@ -7,7 +7,7 @@ async function newFormHandler(event) {
 
 
 
-const response = await fetch (`/api/blogPost-routes.js`, {
+const post = await fetch (`/api/BlogPost`, {
     method: 'POST',
     body: JSON.stringify({
         title,
@@ -19,7 +19,7 @@ const response = await fetch (`/api/blogPost-routes.js`, {
     },
 });
 
-if (response.ok){
+if (post.ok){
     document.location.replace('/');
     } else {
         alert('Unable to add blog post.');
