@@ -56,11 +56,18 @@ router.get('/login', (req, res) => {
 
 router.get('/dashboard', (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect('/dashboard')
+    try{
+    const dbBlogData = BlogPost.findAll({where:{author:req.session.userId}})
+    console.log(dbBlogData)
+    res.render('dashboard',dbBlogData);
     return;
+    
+  } catch (err){
+    res.status(400).json(err);
+  }
   }
   
-  res.render('dashboard');
+  res.redirect('/');
 });
 
 module.exports = router;
