@@ -14,11 +14,12 @@ router.get('/', async (req, res) => {
         },
       ],
     });
-
+    console.log(dbBlogData)
     const blogPosts = dbBlogData.map((blogPost) =>
-      blogPost.get({ plain: true })
-    );
-
+        
+     blogPost.get({ plain: true })
+      );
+    console.log(blogPosts);
     res.render('homepage', {
       blogPosts,
       loggedIn: req.session.loggedIn,

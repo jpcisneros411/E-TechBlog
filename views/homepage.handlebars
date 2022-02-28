@@ -1,4 +1,13 @@
 <div class="HeaderIntro">Here are our current posts!</div>
 <p></p>
-{{#each BlogPost as |BlogPost|}}
+{{#each blogPosts as |post|}}
+<div></div>
+<br>
+<div>
+<h3>{{post.title}}</h3>
+</div>
+<h2>{{post.author}}</h2>
+<br>
+<p><br>{{post.content}}<br></p>
+</p>
 {{/each}}
