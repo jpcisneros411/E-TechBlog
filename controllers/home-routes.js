@@ -28,8 +28,21 @@ router.get('/', async (req, res) => {
     console.log(err);
     res.status(500).json(err);
   }
-
   
+});
+
+//add a blog post.
+router.post('/', async (req, res) => {
+  try {
+    const dbBlogData = await BlogPost.create({
+      title: req.body.title,
+      author: req.body.author,
+      content: req.body.guest_name
+    });
+    res.status(200).json(dbBlogData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 router.get('/login', (req, res) => {
